@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: aqua;
+    background-color: rgb(255, 187, 0);
     border: 2px solid black;
 }
 
@@ -12,7 +12,7 @@ h1{
 }
 
 #P1 {
-    color: brown;
+    color: rgb(147, 165, 42);
 }
 
 .header{
@@ -22,3 +22,4 @@ h1{
 #H11{
     color: coral;
 }
+
