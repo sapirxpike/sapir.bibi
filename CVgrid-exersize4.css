@@ -1,0 +1,113 @@
+body{
+    background-color: royalblue;
+}
+
+#gridcontainer{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'left   main   main  '
+    'left   main   main  '
+    'right   main   main  '
+    'left2  main   main    '
+    'right2   main   main  ';
+
+
+}
+
+div{
+    border: 2px solid black;
+}
+
+
+#item1{
+    grid-area: header;
+    height: 100px;
+    width: 1110px;
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    background-color: white;
+
+}
+
+#item2{
+    grid-area: left;
+    height: 200px;
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    color: blue;
+    background-color: chocolate;
+
+}
+
+#item3{
+    grid-area: main;
+    height: 150px;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    color: blue;
+    background-color: gold;
+
+    
+}
+
+
+#item4{
+    grid-area: right;
+    height: 200px;
+    width: 630px;
+    padding: 20px;
+    margin: 20px;
+    color: blue;
+    background-color: rebeccapurple;
+
+    
+}
+
+
+#item5{
+    grid-area: left2;
+    height: 200px;
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    color: blue;
+    background-color: bisque;
+
+    
+}
+
+#item6{
+    grid-area: right2;
+    height: 100px;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    color: blue;
+    background-color: darkcyan;
+
+    
+}
+ /* הדגמה לסלקטור קומבינציה */
+div div{
+    height: 100px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    color: violet;
+    background-color: darkgreen;
+
+}   
+
+
+
+@media only screen and (max-width: 1000px){
+
+    body{
+        background-color: white;
+    }
+    
+    }

@@ -22,4 +22,11 @@ h1{
 #H11{
     color: coral;
 }
+@media only screen and (max-width: 600px){
+
+body{
+    background-color: var(--makeUp);
+}
+
+}
 
