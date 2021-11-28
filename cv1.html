@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cv.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exersize 5 - CV Grid</title>
+    <script src="cv.js"></script>
+</head>
+<body onload="namefunction()">
+    <H1  id="H11" class="header"> Exersize 5 - CV Grid </H1>
+    <div id="gridcontainer">
+        <div id="item1">name : Sapir Bibi <br> Email: safirxpike@hotmail.com <br> Phone number: +972-546-232610 <br> adress: 21 Baylis Menahem St. Haifa, Israel  <br> Date of birth: 09/30/1990 <br> id: 305159980 <br></div>
+        <div id="item2">Education</div>
+        <div id="item3">Key skills</div> 
+        <div id="item4">Core Accomplishments</div> 
+        <div id="item5">Militay Service</div>
+
+        
+        <h2> This link to my facebook website </h4>
+        <a href="https://www.facebook.com/safir.bibi"> facebook - Sapir Bibi </a><br>
+
+    <h1 id="2">now we will try change some pictures </h1><br>
+    <p id = "1"></p> <br>
+        <img id="SMimg" width="70%" src="imgs/pug.png" alt="stopmotion">
+        <button onclick="stopmotion()">  click to see more pictures </button>
+
+    </div>
+
+    <h3> This link to filling form </h3>
+        <a href="forms-exersize3.html"> filling form</a>
+
+
+
+<h1> Geolocation API</h1>
+<h3> Want to know where are you in the world?</h3>
+<p>Click to see coordinates.</p>
+    <button onclick="getLocation()">Try It</button>
+    <p id="demo"></p>
+    <script>
+    const x = document.getElementById("demo");
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } 
+        else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+  
+
+<p id="demo"></p>
+<script>
+localStorage.setItem("name","Sapir Bibi");
+document.getElementById("demo").innerHTML =
+localStorage.getItem("name");
+</script>
+    
+
+
+
+
+<h2>contact validation</h2>
+<p>Enter your age:</p>
+<input id="id1" type="number" min="0" max="120" required>
+<button onclick=
+"myFunction()">OK</button>
+<p>If the number is less than 100 or greater than 300, an error message
+will be displayed.</p>
+<p id="demo"></p>
+<script>
+function myFunction() {
+const inpObj = document.getElementById("id1");
+if (!inpObj.checkValidity()) {
+document.getElementById("demo").innerHTML = inpObj.validationMessage;
+} else {
+document.getElementById("demo").innerHTML = "Input OK";
+}
+}
+</script>
+
+
+
+
+
+
+
+
+<H1  id="H11" class="header"> contact </H1>
+
+    <p id="P1">This is a form <br> which you will input <br> detail in order to call you back </p>
+
+    <h1>contact infomrmation</h1>
+    <form action="" method="post" >
+        
+        <label for="Fname"> First name </label>
+             <input type="text" name="Fname" id="Fname"><br>
+        
+        <Label for=" "> Last Name <label>
+             <input type="text"><br>   
+             
+        <label for=""> Email </label>
+            <input type="text"><br>
+        
+        <label for=""> Password (please put Strong password) </label>
+            <input type="password"><br>
+        
+        <label for=""> Birth Date </label>
+            <input type="number"><br>
+
+    
+        <Label for=" "> Please put your comment <label>  <br>
+             <textarea name=" "id="" cols="30" rows="10"> </textarea><br>
+             <input type="submit"></input>
+
+
+
+
+</body>
+</html>
